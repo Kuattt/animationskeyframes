@@ -1,0 +1,62 @@
+.cont1 {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    transform: rotate(45deg);
+
+}
+
+.cont2 {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    transform: scale(1.5) translateX(30px) translateY(70px);
+    transform: skew(25deg, 15deg)
+}
+
+
+
+.block {
+    width: 150px;
+    height: 150px;
+    background-color: #4CAF50;
+    transition: transform 1s, background-color 3s;
+
+}
+
+.block:hover {
+    transform: rotate(45deg) scale(2);
+    background-color: blue;
+}
+
+.container {
+    width: 200px;
+    height: 250px;
+    background-color: chocolate;
+    animation: Moveandcolor 5s infinite;
+    
+
+}
+
+@keyframes Moveandcolor {
+    0% {
+        background-color: coral;
+        transform: translateX(0px);
+    }
+
+    25% {
+        background-color: darkgoldenrod;
+        transform: translateX(50px);
+    }
+
+    50% {
+        background-color: rgb(255, 183, 0);
+        transform: translateX(100px);
+    }
+
+    75% {
+        background-color: red;
+        transform: translateX(150px);
+    }
+
+}
